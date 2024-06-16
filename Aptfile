@@ -1,7 +1,12 @@
-libgstreamer1.0-dev
-libsdl2-dev
-libsdl2-ttf-dev
-libsdl2-image-dev
-libsdl2-mixer-dev
-libpangoft2-1.0-0
-libpangoft2-dev
+# Update package lists
+RUN apt-get update
+
+# Install Kivy dependencies
+RUN apt-get install -y \
+    libgstreamer1.0-dev \
+    libsdl2-dev \
+    libsdl2-ttf-dev \
+    libsdl2-image-dev \
+    libsdl2-mixer-dev \
+    libpangoft2-1.0-0 \
+    libpangoft2-dev
